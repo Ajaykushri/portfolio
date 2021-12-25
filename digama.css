@@ -1,0 +1,30 @@
+*{overflow-x:hidden}
+body{width:100vw;overflow-x:hidden;}
+#dropdown_list{display:none;}
+#contact_dropdown{display:inline-block;color:white;color:white;font-family:verdana;font-weight:bold;padding-left:20px;}
+#contact_dropdown:hover #dropdown_list{display:block;background-color:hsl(225,80%,70%,0.3);}
+#navlist{display:flex;padding:10px;font-size:14px;width:100vw;}
+li a{text-decoration:none;padding-left:20px;color:white;font-family:verdana;font-weight:bold;}
+li a:hover{font-size:15px;color:black;text-decoration:underline;}
+#search-div{display:flex;position:relative;left:80vw;top:38px;}
+#contact_dropdown:hover{font-size:15px;color:black;text-decoration:underline;}
+#header_img{height:100%;width:100vw}
+#image{width:100%;height:500px;position:relative;z-index:0;}
+#text{position:absolute;top:450px;left:20vw;color:white;font-size:34px;text-shadow:-5px -6px 5px black;font-family:verdana;height:300px;}
+#_explore{transition:width 1s;background-image:linear-gradient(10deg,red,black,white);width:130px;height:30px;border-radius:10px 4px 5px;position:absolute;left:20vw;color:white;font-family:verdana;}
+#_explore:hover{transform: scale(1.09,0.9);width:140px;color:black;background-image:linear-gradient(20deg,white,orange)}
+.container{display:flex;}
+/*choose the right container for flex*/
+#col1{margin-left:5px;margin-top:50px;margin-right:10px;background-color:hsla(300,89%,78%,0.2);box-shadow:1px 1px 5px green;}
+#col2{width:900px;padding:5px;box-shadow:1px 2px 3px gray;
+margin-top:40px;border-radius:9px;background:rgba(150,135,178,0.2)}
+img{height:300px;width:100%;border:1px solid black; box-shadow:-1px 1px 4px green;border-radius:7px;}
+.text{font-family:'arial','lucida handwriting';line-height:25px;word-spacing:2px;letter-spacing:1px;}
+.list{margin:10px;font-family:verdana;border-top:1px solid black;margin-left:0px}
+.list:hover{background-color:green;color:white;border-radius:5px;}
+.form-container{background:hsla(0,0%,0%,0.6);color:white;padding:10px;border-radius:10px; width:100%;margin:10px;}
+.padding{padding:10px;}
+.btn{color:white;background:rgba(123,150,134,0.3);width:70px;height:30px;border-radius:10px 5px 10px;font-family:Arial black;text-shadow:2px 2px 6px black;}
+.btn:hover{background:rgba(12,150,14,0.9);width:74px;}
+footer{margin-top:15px};
+

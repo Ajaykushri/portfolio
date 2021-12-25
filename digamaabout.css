@@ -1,0 +1,8 @@
+body{background-image:url("illustration.jpg");background-size:cover;background-repeat:no-repeat;background-origin:border-box;}
+#heading{font-family:verdana;}
+body{text-align:center;}
+p,ul li{font-family:arial black; font-size:2vw; text-shadow:6px 5px 8px white}
+a[href]{color:green;background:yellow;font-size:15px;font-family:'lucida handwriting'}
+ul{background-color:rgba(212,168,233,0.2)}
+h2{background-color:rgba(12,5,123,0.2);}
+

@@ -1,0 +1,57 @@
+/*removing default browser setting */
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+overflow-x:hidden;
+}
+/*designing navbar*/
+nav{
+position:relative;
+width:100%;
+top:0px;
+Background:rgba(0,0,0,0.6);
+height:60px;
+overflow-y:hidden;
+
+}
+/* keep nav height and font size fixed in pixel apply relative size in paragraph.*/
+#brandname{
+background-color:white;
+text-align:center;
+}
+ul li{float:left;margin-left:4vw;}
+ul li a {
+list-style-type:none;text-decoration:none;
+font-size:20px;font-family:'Lucida handwriting','Arial black';
+font-weight:bold;font-style:italic;font-variant:small-caps;
+text-align:center;letter-spacing:1.8px;
+color:hsl(125,100%,50%);
+ }
+ li{border-right:1px double black;padding-right:40px}
+li a:hover{font-size:22px;text-decoration:underline;color:black;}
+li a:visited{font-size:20px;text-decoration:none;color:white;}
+li a:active{font-size:24px;text-decoration:line-over;color:white;background:black;opacity:0.6}
+/*active means when get clicked*/
+
+/* styling header*/
+main > dl{background-color:#556798;margin:0;color:#ffe6e8}
+#formlegend{animation-name:form; animation-duration:1.5s;
+ animation-direction:alternate; animation-timing-function:ease-in-out;animation-delay:0s;position:fixed;z-index:1;top:10px;right:30vw;
+background-color:hsla(40, 89%,9%,0.8); display:none;
+border-radius:3px;color:white;
+width:40vw;}
+.form{margin:10px;}
+li > input[type='button']{background:green;margin:3px;color:white;font-family:'Lucida handwriting';text-transform:capitalize;border-radius:4px 13px;padding:2px;width:70px}
+li > input[type='button']:hover{width:80px;color:black;}
+#remarkcontiner{overflow:hidden;background-color:hsla(289,89%,10%,0.5);font-family:verdana;font-size:30px;form-weight:bold;text-decoration:underline;color:white;}
+label[for='remark']{padding:100px;}
+#remark{margin:5px;width:70%;height:17vw;border-radius:10px}
+#remarksubmit{margin-top:0px;margin-left:2%;padding:0px;background:green;width:8%;height:30px;border-radius:10px}
+#refresh{background-color:green;margin-top:0px;padding:0px;width:8%;height:30px;border-radius:10px}
+#dark-mode{background-color:black; color:white;margin-top:0px;padding:0px;width:120px;height:30px;border-radius:10px}
+#default-mode{background:white;border-radius:5px 6px 3px; float:right;display:none;width:150px;}
+@keyframes form{
+from{width:0px;height:0px;}
+to{width:40vw;height:100vh;}
+}
