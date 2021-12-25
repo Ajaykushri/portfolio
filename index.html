@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>portfolio: landing page</title>
+    <meta name="viewport" content="device=width-device, initial-scale = 1.0">
+    <link rel="stylesheet" href="styling/style.css">
+    <script src="home.js"></script>
+<!--/*media query not working on those element that has inline css;*/-->
+    <link rel="icon" href="media/icon.jfif">
+</head>
+<body>
+<div id="welcomeNote" style="width:100vw;background-image: linear-gradient(6deg,red,orange,blue); height:100vh;position:absolute;z-index:1;">
+    <p id="welcomeText" style="font-family:verdana;font-size: 60px;padding-right:60px;text-align:center;position:fixed;top:170px;left:20vw">Welcome To My Portfolio</p>
+    <button type="button" id="continue" style="position:fixed; top:460px;left:35vw; background-image:linear-gradient(50deg,purple,blue,red);color:white;width:30vw;height:7vh;border-radius:40px 20px"
+    onclick="document.getElementById('welcomeNote').style.display = 'none';">Click to Continue</button>
+</div>
+<!--always mark landing page as index.html;-->
+
+<!--make this page more valuable with time and redesign-->
+
+<header>
+<!--   background size to fill container but height to set container height;-->
+    <nav>
+    <ul>
+        <li title="click here to go to home"><a href="index.html" target="_blank">Home</a>  </li>
+        <li class="navtab" title="click to check portfolio"><a target="_blank" href="portfolio.html"> Portfolio</a></li>
+        <li class="navtab" title="click to know me"><a  target="_blank " href="about.html">About</a> </li>
+        <li class="navtab" title="click to contact me"><a target="_blank" href="contact.html">Contact</a> </li>
+    </ul>
+</nav>
+<div id="prf">
+     <img id="logo2" src="media/logo.jpg" alt="A boy with a smile on face;" height="250vh" width="300vw">
+<!--    change the photo-->
+    <span id="data">
+     <h1 id="username"><strong>Ajaykushri</strong></h1>
+    <p>I design and develop static websites and SEO, using HTML, CSS and Javascript.</p>
+        <div>
+    <button id="btn-portfolio" title="click to check portfolio"><a href="portfolio.html" target="_blank">Check Portfolio</a> </button>
+</div>
+    </span>
+</div>
+
+</header>
+</div>
+</body>
+</html>
