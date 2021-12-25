@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Using Form,list with css and javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    meta data is also important so learn how a web meta make it rank-->
+   <link rel="stylesheet" href="informatics.css">
+</head>
+<body >
+<!--containers are important-->
+<!--
+1) first complete html than go to css and then go to js,
+make it responsive
+2) keep revising and practicing as if not in use will forgot
+-->
+
+<div class="header" >
+    <header>
+
+        <nav>
+            <h1 id="brandname"><u>Informatics.com </u></h1>
+
+            <ul type="none">
+                <li><a class="nave" href="#wild">Wild</a></li>
+                <li><a class="nave" href="#earth">Earth</a> </li>
+                <li><a class="nave" href="#space">Space</a> </li>
+                <li><a class="nave" href="#sea">Sea</a></li>
+                <li><input type="button" name="join_us" value="join us" onclick="document.getElementById('formlegend').style.display = 'block';"></li>
+                <li> <input type="button" name="dark-mode" id="dark-mode" value="Try dark mode" onclick="darkMode();document.getElementById('dark-mode').style.display = 'none';document.getElementById('default-mode').style.display = 'block';">
+    <input type="button" name="default-mode" id="default-mode" value="Try normal mode" onclick="lightMode();document.getElementById('dark-mode').style.display = 'block';document.getElementById('default-mode').style.display = 'none';"></li>
+
+<!--onclick can have multiple click like in above example-->
+            </ul>
+        </nav>
+
+    </header><br><br><br><br>
+</div>
+<div class="body">
+    <main>
+<!--main
+The HTML <main> element represents the dominant content of the <body> of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+A document mustn't have more than one <main> element that doesn't have the hidden attribute specified.-->
+
+        <dl id="dl">
+            <dt><h1 id="wild">Wild</h1></dt>
+               <dd><p>This is wild. It is very beautiful and important component of our Eco-System.</p> </dd>
+<!--            will make whole page as a descriptive list-->
+                <dd><p>It is a very resourceful component of mother nature.</p></dd>
+            <dd><p>We all get fascinated with it all the time, we keep getting advantages of it. Alas!, we have not learned to
+            respect this beautiful gift of nature. we over exploit this source of nature. Trees are getting chopped in a non-responsible
+            manner. forest are becoming a thing of past now days. But, In this distressing situation
+             there is some hope we see, when eco-warriors raise the sound for saving this beautiful gift. Sustainable development
+                is one of the best example of this initiative. Now, people started looking nature in more relatable manner than just
+            a profit making mine. Now, Development with ecosystem conservation is the motive for many government across the world. Hence, we can say
+            that yes!, our future is not that deserted as it felt to be, if we could not have considered the importance of saving nature and wild.</p></dd>
+
+            <dt><h1 id="earth">Earth</h1></dt>
+            <dd>Earth is the only known planet to humans that supports and sustains life.</dd>
+            <dd><p>We evolved on <big>Earth</big> and now using it's resources to develop our civilisation</p></dd>
+            <dt><h1 id="space">Space</h1></dt>
+            <dd><p>Space is a very fascinating and mysterious place to explore.</p></dd>
+            <dd><p>Our planet Earth is in Space. Our entire Galaxy is just a part of this vast space.</p></dd>
+            <dd><p>We are exploring space from many centuries, but the revolution in technology has led us to know it  and see it more closely.</p></dd>
+            <dd><p>we see thousands of stars by naked eye, millions with normal telescope and now are capable of seeing billions with telescope like
+                <b title="Hubble is a telescope that is located in space to see universe more closely.">HUBBLE</b> Let's see some of Planets of our solar system.</p>
+ <div id="table">
+            <table border="1" cellpadding="10" cellspacing="0" width="100%" id="table-list">
+                <caption>
+<!--                    caption must be written first it should be the first child of table-->
+                    List of Planets in Solar System
+                </caption>
+                <colgroup>
+<!--                    it should be the second child of table but optional to use-->
+                    <col span="1" style="background-color:red">
+                    <col span="2" style="background-color:orange">
+<!--                    first col execute from first column, second for 2,3.-->
+<!--                    in horizontal heading all th in same row, for vertical tale it's in every row.-->
+                </colgroup>
+                <thead>
+                <tr>
+                    <th width="15%">Position from Sun</th>
+                    <th width="60%">Name</th>
+                    <th>Type of structure</th>
+                </tr>
+                </thead>
+                <tbody id="gray">
+                <tr>
+                    <td align="center">1</td>
+                    <td align="center">Mercury</td>
+                    <td align="center">Rock planet</td>
+                </tr>
+                <tr>
+                    <td align="center">2</td>
+                    <td align="center">Venus</td>
+                    <td align="center">Rock planet</td>
+                </tr>
+                <tr>
+                    <td align="center">3</td>
+                    <td align="center">Earth</td>
+                    <td align="center">Rock planet</td>
+                </tr>
+                <tr>
+                    <td align="center">4</td>
+                    <td align="center">Mars</td>
+                    <td align="center">Rock planet</td>
+                </tr>
+                 <tr>
+                    <td align="center">5</td>
+                    <td align="center">Jupiter</td>
+                    <td align="center">Gaseous planet</td>
+                </tr>
+                 <tr>
+                    <td align="center">6</td>
+                    <td align="center">Saturn</td>
+                    <td align="center">Gaseous planet</td>
+                </tr>
+                 <tr>
+                    <td align="center">7</td>
+                    <td align="center">Venus</td>
+                    <td align="center">Gaseous planet</td>
+                </tr>
+                 <tr>
+                    <td align="center">8</td>
+                    <td align="center">Neptune</td>
+                    <td align="center">Gaseous and coldest planet</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="3" align="center"><mark>Pluto was removed from list of planets due to it's small size</mark></td>
+                </tr>
+                </tfoot>
+            </table>
+ </div>
+            </dd>
+
+            <dt>
+                <dd><h1 id="sea">Sea</h1></dd>
+            <dd>It is one of the most exciting place to explore, it is very possible that the first life would have evolved in sea.</dd>
+            <dd>It is very ironical or say tell how difficult it is to explore it that-more people have gone to moon then to the dippiest point on earth. And we know even less about sea then space. </dd>
+            </dt>
+            <dd>
+                <ol type="I" start='1'>
+<!--                    start attribute tell about the count list number should start with either 0 or 1 or another else-->
+                    <h1>The five oceans on Earth</h1>
+                    <li>Pacific ocean</li>
+                    <li>Atlantic ocean</li>
+                    <li>Indian ocean</li>
+                    <li>Southern ocean</li>
+                    <li>Arctic ocean</li>
+                </ol>
+            </dd>
+        </dl>
+    </main>
+</div>
+<footer id="join_us1">
+<div id="formlegend">
+    <fieldset id="formfield" style="border-radius:10px">
+        <legend ><h2><u>Joining Form</u></h2></legend>
+
+    <div class="form" >
+        <form  id="login_form" novalidate autocapitalize="characters" autocomplete="on">
+<!--            <&#45;&#45;action="..." method="get" target="_blank"&ndash;&gt;-->
+<!--  comment out action as no php file available now.          -->
+            <fieldset style="border-radius:10px">
+                <legend>Personal Info</legend>
+<!--                field set and legend together give a good appearance to form when grouping as per heading required. -->
+                <label for="name">
+                    Name:
+                </label>
+                <input type="text" maxlength="30" name="name" placeholder="Please enter
+your name..." id="name" required><br><br>
+<!--                setting limit to input can help improving database handling-->
+                <label for="gender" >Gender</label><br>
+<!--                just use label for div containing the radio buttons-->
+                    <div id="gender" >
+                        <input type="radio" name="gender" value="male" id="male" required checked>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female" required>
+                <label for="female">Female</label>
+                  <input type="radio" name="gender" value="female" id="other" required>
+                <label for="other">Other</label>
+                        <br><br>
+                        <label for="age">
+                            Age:
+                        </label>
+                        <input type="number" name="age" id="age" max="100" min="7">
+                    </div>
+  </fieldset><br><br>
+            <fieldset style="border-radius:10px;">
+                <legend>Preferences & Suggestions</legend>
+                <label for="niche"> Tell your Reading preferences </label><br><br>
+<!--                providing label is must as it require for screen readers to person what data to enter.-->
+                <select name="niche" id="niche">
+                    <option selected>Pic your preference</option>
+                    <option value="Science">Science
+<!--providing value where user only select don't type value is must for server to get value-->
+                    </option>
+                    <option value="Environmental" >Environmental</option>
+
+<!--                    select used to put pre selected option-->
+                    <option value="wilds">Wild</option>
+                    <option value="Space">Space</option>
+                    <option value="Sea">Sea</option>
+                    <option value="Global Eco-system Functioning">Global eco-system functioning</option>
+
+                </select><br><br>
+                <label for="suggestions">Suggestions:</label>
+                <input type="text" id="suggestions" name="suggestions" list="suggest">
+                <datalist id="suggest">
+                    <option value="Add Geo political agendas"></option>
+                    <option value="Add sports"></option>
+<!--                    no need to write value is self sufficient-->
+<!--                    this is how dataList can be used, list attribute of input must be = to id of datalist.-->
+                </datalist><br>
+
+<!--                learn the use of output-->
+
+            </fieldset><br>
+            <fieldset style="border-radius:10px">
+                <legend>Why Want to Join?</legend>
+                <label for="reason">Tell us Why You Want to Join us?<i><small>(*Please select one or both)</small></i></label>
+                <div id="reason"><br>
+                    <input type="checkbox" name="r1" value="for writing" id="reason1" checked>
+                    <label for="reason1" >For Writing</label>
+                    <input type="checkbox" id="reason2" value="for reading" name="r2">
+                    <label for="reason2">For Reading Only</label>
+                </div>
+            </fieldset><br>
+            <fieldset style="border-radius:10px;">
+                <legend>Login Info</legend>
+                <label for="email">Enter your E-mail id:</label>
+                <input type="email" name="mail" id="email"><br><br>
+                <label for="password">Enter your Password</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+            <br>
+                <input type="submit" id="submit" name="submit" value="Submit" onclick="document.getElementById('formlegend').style.display='none';">
+            <input type="reset" id="reset" name="reset" value="reset">
+
+<!--learn about output in html form.-->
+            <input type="button" name="close" value="close" id="close" onclick="document.getElementById('formlegend').style.display='none';" style="float:right;">
+
+        </form>
+    </div>
+    </fieldset></div>
+
+    <hr>
+    <div id="remarkcontiner">
+        <label for="remark">Remarks:</label><br>
+                <textarea cols="50" rows="4" maxlength="3000" id='remark' PLACEHOLDER="Add What you like about us..." form="login_form" ></textarea>
+                <br><button id="remarksubmit" type="submit" name="submit_remark" value="Submit" form="login_form" formtarget="_blank" formaction="..." formenctype="text/plain" formmethod="get">Submit
+                <button type="reset" name="reset" value="Refresh" id="refresh" form="login_form" formtarget="_blank" formaction="..." formenctype="text/plain" formmethod="get"> Refresh
+    </div>
+<!--    form attribute in submit button only.
+2)only provide value where user can't type input or it has to select one option.
+-->
+
+
+<script>
+                function darkMode(){
+                document.getElementById("brandname").style.backgroundColor = 'black';
+                document.getElementById("brandname").style.color = 'white';
+                document.getElementById("dl").style.backgroundColor = 'black';
+                document.getElementById("gray").style.backgroundColor = 'gray';
+                return;
+                };
+                function lightMode(){
+                document.getElementById("brandname").style.backgroundColor = 'white';
+                document.getElementById("brandname").style.color = 'black';
+                document.getElementById("dl").style.backgroundColor = '#556798';
+                document.getElementById("gray").style.backgroundColor = 'transparent';
+                return;
+                };
+            </script>
+</footer>
+</body>
+</html>

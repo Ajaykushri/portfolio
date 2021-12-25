@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About page</title>
+    <link rel="icon" href="icon.jfif">
+    <meta name="viewport" content="device=width-device, initial-scale = 1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+               body{margin:0;padding:0;background-image:linear-gradient(5deg,purple,violet,blue,red)}
+                img[alt='profile picture']{border-radius:50%;width:230px;height:30vh;box-shadow:4px 9px 3px rgba(255,240,100,0.3);padding:20px;}
+            #skills{display:block;list-style-type:square}
+            #about{display:flex;flex-direction:raw;box-sizing:border-box;padding:10px}
+#restinfo{display:flex;justify-content:center;flex-wrap:wrap;color:white;font-family:verdana;padding:10px;}
+h2{text-decoration:underline;}
+#obj, #qua, #ski, #exp{width:40%;padding:5px;position:relative;top:8vh;box-shadow:9px 9px 4px rgba(255,240,100,0.3); border:1px solid white;border-radius:30px;margin:10px}
+            #intro{color:white;padding:10px;margin:10px;margin-top:38px;border:1px solid white;border-radius:30px;background-color:rgba(201,150,255,0.3)}
+@media screen and (max-width:500px)
+    {body{background-color:purple;}
+    nav{height:30vh;margin:0px;padding:0px;width:100%;display:flex;justify-content:center}
+    ul{display:block;width:100%;height:34vh;margin:0px;padding:0px;}
+    li{margin:14px;width:85vw;}}
+
+</style>
+
+</head>
+<body>
+<!--responsive after 600px;-->
+<div id="navbar">
+    <nav>
+    <ul>
+        <li title="click here to go to home"><a href="index.html" target="_blank">Home</a>  </li>
+        <li class="navtab" title="click to check portfolio"><a target="_blank" href="portfolio.html"> Portfolio</a></li>
+        <li class="navtab" title="click to know me"><a  target="_blank " href=about.html">About</a> </li>
+        <li class="navtab" title="click to contact me"><a target="_blank" href="contact.html">Contact me</a> </li>
+    </ul>
+    </nav>
+
+</div>
+<div id="about">
+<img src="logo.jpg" alt="profile picture" width="400vw">
+    <div id="intro">
+             <h1>Aboout me!</h1>
+             <p>    Hi, I am Ajaykushri AKA Ajay kumar Shrivastav.
+            I am a professional Front-End Web developer.
+            I started my journey on August,2021. I am a
+            self taught learner and all I learned from Internet
+            Sources like Youtube, W3School etc.</p>
+
+    </div>
+
+</div>
+<div id="restinfo">
+
+<span id="obj">
+<h2>Objectives:-</h2>
+<p>My objective is very clear, to satisfy clients with my websites and services. I believe in work ethics and understands the
+importance of  punctuality and committed to my work.</p>
+</span>
+<span id="qua">
+    <h2>Qualification:- </h2>
+<p>I am perusing my graduation from Dyal Sing Evening College,University of Delhi, in Computer Application.</p>
+</span>
+ <span id="ski">
+    <h2>Skills:-</h2>
+<p>My Skill bucket includes-</p>
+<ul id="skills">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li>Bootstrap</li>
+    <li>Wordpress</li>
+    <li>SEO</li>
+
+</ul>
+     </span>
+    <span id="exp">
+        <h2>Experience:-</h2>
+<p>Fresher</p>
+<p>I am a fresher and that's why I insist you to checkout my
+    <a href="portfolio.html" target="_blank">Portfolio</a> to check my potential.
+
+</p>
+
+    </span>
+</div>
+
+
+</body>
+</html>

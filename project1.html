@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trying javascript first time</title>
+</head>
+<body>
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+<p id="demo2">Now thiswill be changed;</p>
+<p id="demo3"></p>
+<button type="button" onclick="demoFunction()">click here to see function</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+<button type="button" onclick='document.getElementById("demo2").innerHTML = "Yes, I did it !"'>click me</button>
+<button type="button" onclick="document.getElementById('demo').style.fontSize = '40px';">resize</button>
+<!--
+1) always use camelCase in js as it is case sensitive. and
+2)for button onclick write code in inline;
+3) javascript can be inline in body and in head also and can be accessed using function() or just mention in inline on click
+
+-->
+<!--just apply js inline;-->
+<script>
+    function demoFunction(){
+    alert('Welcome!');
+    }
+    document.getElementById("demo3").innerHTML = "My first javascript programme.";
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <style>
+        body{background-image: linear-gradient(78deg,blue,violet,white)}
+        h1{color:white;text-shadow:-3px -5px 8px black;}
+        a{align:center;border:1px solid black;border-radius:5px; background-image: linear-gradient(to right,blue,black,green);color:white;text-shadow:-3px -5px 8px black;padding:7px}
+        ul{display:flex; margin:30px;}
+        li a{margin:10px; padding:10px;}
+       li a:hover{color:black;background-image:linear-gradient(4deg, white,red)}
+       li:hover{width:80px;margin-right:30px}
+       #list{display:flex;border:1px solid black;padding:50px;border-radius:6px;background-color:
+       hsla(56,100%,5%,0.2)}
+       .card{border:5px solid violet;border-radius:14px;box-shadow:2px 5px 6px pink;width:30vw;margin-left:10px;}
+       .card > figure{animation:rotate 3s;animation-iteration-count:infinite;padding:10px;border:1px solid ;margin:8px;box-shadow:2px 5px 6px pink; }
+@keyframes rotate{
+0%{box-shadow:5px 8px 6px pink;border-right-color:red}
+33%{box-shadow:5px -8px 6px red;border-bottom-color: pink}
+66%%{box-shadow:-5px -8px 6px blue;border-left-color: white}
+100%{box-shadow:-5px 8px 6px orange;border-top-color: yellow}
+}
+    </style>
+</head>
+<body >
+    <nav>
+    <ul type="none">
+        <li title="click here to go to home"><a href="index.html" target="_blank">Home</a>  </li>
+        <li class="navtab" title="click to check portfolio"><a target="_blank" href="portfolio.html"> Portfolio</a></li>
+        <li class="navtab" title="click to know me"><a  target="_blank " href="about.html">About</a> </li>
+        <li class="navtab" title="click to contact me"><a target="_blank" href="contact.html">Contact</a> </li>
+    </ul>
+</nav><hr>
+<h1 align="center"><u>Welcome, to this Portfolio page </u></h1><br>
+    <div id="list">
+
+    <div class="card">
+    <figure>
+            <img src="informatics.jpg" height="200px" width="100%">
+            <figcaption>
+                <p align="center"><a href="informatics.html" target="_blank">A static webpage: informatics.com</a> </p>
+
+            </figcaption>
+        </figure>
+
+</div>
+<div class="card">
+    <figure>
+            <img src="go-digama.jpg" height="200px" width="100%">
+            <figcaption>
+                <p align="center"><a href="goDigama.html" target="_blank">A Static travel blogs webpage: Go digama</a> </p>
+
+            </figcaption>
+        </figure>
+
+</div>
+
+
+    </div>
+<!--
+1) learn file management
+-->
+</body>
+</html>

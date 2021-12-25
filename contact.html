@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact page</title>
+    <meta name="viewport" content="device=width-device, initial-scale = 1.0">
+        <link rel="icon" href="icon.jfif">
+    <link rel="stylesheet" href="style.css">
+<style>
+                   body{margin:0;padding:0;background-image:linear-gradient(5deg,purple,violet,blue,red);height:100vh}
+                   #contact{margin:70px;position:relative;top:8vh;color:white;text-align:center;border:1px solid white;border-radius:40px;}
+                   p a{color:yellow;border:1px solid white;padding:10px;border-radius:20px;background-image:linear-gradient(20deg,red,blue)}
+@media screen and (max-width:800px)
+    {body{background-color:purple;}
+    nav{height:30vh;margin:0px;padding:0px;width:100%;display:flex;
+    justify-content:center;}
+    ul{display:block;width:100%;height:34vh;margin:0px;padding:0px;}
+    li{margin:14px;width:85vw;}}
+
+</style>
+<!--    media not working with inline tag-->
+<script src="contact.js"></script>
+
+</head>
+<body>
+    <nav>
+    <ul>
+        <li title="click here to go to home"><a href="index.html" target="_blank">Home</a>  </li>
+        <li class="navtab" title="click to check portfolio"><a target="_blank" href="portfolio.html"> Portfolio</a></li>
+        <li class="navtab" title="click to know me"><a  target="_blank " href="about.html">About</a> </li>
+        <li class="navtab" title="click to contact me"><a target="_blank" href="contact.html">Contact me</a> </li>
+    </ul>
+</nav>
+    <form id="message" style="display:none">
+        Name:  <input type="text" placeholder="Please Enter Your name..."><br><br>
+        Profession: <input type="text" placeholder="Please Enter your Profession;">
+        <br><br><button type="button" style="margin-left:70px;" onclick="document.getElementById('message').style.display= 'none';">Submit </button>
+
+    </form>
+ <div id="contact">
+ <h1>Contact me</h1>
+<p>You can contact me through any of the following methods:-</p>
+<h3>E-mail:-</h3>
+<p><a href="mailto:ajaykumarshrivastav1811@gmail.com">Click this to E-Mail me</a> </p>
+<h3>Find me on linkedin:-</h3>
+<p><a href="https://www.linkedin.com/in/ajay-kumar-shrivastav-700245201">Click this to find me on Linkedin</a> </p>
+<!--    can have multiple onclicks.-->
+ </div>
+
+</body>
+</html>

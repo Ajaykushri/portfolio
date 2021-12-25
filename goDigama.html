@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ajay kumar Shrivastav">
+    <meta name="description" content="This is a website for Bloggers from across the world. They are free to all kind of
+creativity. This website particularly focuses on the traveling blogs.">
+    <meta name="keywords" content="travelling, exploration, inspiration,...">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<!--    always use meta, learn to use in more effective way.-->
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="El-Portal-Beach-San-Clemente-Bryce16-13.jpg">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="digama.css">
+    <style>
+        @media screen and (max-width:500px){
+        #navlist{display:flex;
+        flex-direction:column;
+        align-item:center;
+        justify-content:center;
+        background-color:hsla(38,100%, 23%,0.7);
+        align-content:center;}
+        #navlist{padding:0px;margin:0px;}
+
+        li{text-align:center;margin-top:5px;padding:4px; border-bottom:1px double black;}
+
+        #contact_dropdown{text-align:center;padding:4px;margin-top:5px;border-bottom:1px double black;}
+       .container{display:block;}
+       #col1{height}
+        #drpdwn-li{display:none}
+        #drpdwn:hover #drpdwn-li{display:block;}
+        #col2{width:370px; margin:auto;}
+        #col3{display:none;}
+        *{text-wrap:wrap;}
+        }
+    </style>
+<!--    <script src=""></script>-->
+
+    <!--        <s>: this tag use to make line through the word-->
+</head>
+<body>
+<!--
+0) follow the chronology of html, css (also make it responsive)and then javascript and other things
+1)build and write note of learnings from comments,
+2)always use a seo friendly coding layout
+3)always use containers, required tags, and id-class
+4)make it responsible, make it mobile friendly after desktop friendly
+5) make all link workable.
+6)learn how to make search bar work
+-->
+<header>
+    <div id="brandname">
+            <h1 id="Bname">Go-Digama.com</h1>
+<p id="slogan">Explore,Present and Inspire</p>
+
+    </div>
+    <div id="navbar">
+        <nav id="nav">
+            <ul id="navlist" type="none">
+                <li><a href="goDigama.html" target="_blank">Home</a> </li>
+                <li><a href="aboutdigama.html" target="_blank">About</a> </li>
+                <div id="contact_dropdown">
+                    <span>Contact us</span>
+                    <div id="dropdown_list">
+                         <li>
+                    <ul id="contact_purpose" type="none">
+                        <li><a href="#for_us" onclick="document.getElementById('for_us').style.display = 'block';">Write for us ($)</a> </li>
+<!--                        <li><a href="#">Request for Blogs</a> </li>-->
+                        <li><a href="#contribute" onclick="document.getElementById('contribute').style.display = 'block';">Contribute </a> </li>
+                         <li><a href="#issue_" onclick="document.getElementById('issue_').style.display = 'block';">Raise an issue</a> </li>
+                    </ul>
+                </li>
+                    </div>
+
+                </div>
+
+
+                <li><a id="li-sign" href="#sign_in" onclick="document.getElementById('sign1').style.display = 'block';">Sign-in</a> </li>
+                <li><a href="#login_" onclick="document.getElementById('login_').style.display = 'block';">Log-in</a> </li>
+
+
+            </ul>
+
+        </nav>  </div>
+
+        <div class="header_background">
+            <div id="header_img">
+                <img src="illustration.jpg" alt="The Inspiring view" height="50%" width="100vw" title="A very beautiful Beach in California" id="image">
+                <div id="text">
+                                    <h2 >For the lovers of Beaches</h2>
+                    <button value="Explore" type="button" name="explore" id="_explore"><b>Explore more</b></button>
+
+                </div>
+            </div>
+        </div>
+<!--
+it is must to give the container full height width if want to expand the
+inner element to their full size;
+-->
+
+
+</header>
+<main>
+
+    <div class="container">
+        <div id="col1">
+            <div id="drpdwn">
+                <span><h4 align="center">Different Niches for Blogs</h4></span>
+                <div id="drpdwn-li">
+                    <ul id="niche_list" type="none">
+                <li><p class="list">Wild-Life Blogs</p></li>
+                <li><p class="list">Beaches Blogs</p></li>
+                <li><p class="list">Mountains Blogs</p></li>
+                <li><p class="list">Desert Blogs</p></li>
+                <li><p class="list">Metro Cities Blogs</p></li>
+                <li><p class="list">Beautiful Rural Blogs</p></li>
+            </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div id="col2">
+            <h1>The Paradise of California</h1>
+<!--            maine content in this col2 container-->
+            <figure id="skyscrapers">
+                   <img src="skyscrapers.jpg" alt="California Skyscrapers" width="100vw" height="90%">
+                <figcaption>This is a very beautiful evening in California.</figcaption>
+            </figure>
+            <span id="intro"><br><br>
+                <h2>Introduction</h2>
+                <p class="text">California is a state in the Western United States.It is the most populous and the third-largest U.S. state by area. It is also the
+                    most populated subnational entity in North America and the 34th most populous in the world. Sacramento is the state's capital,
+                    while Los Angeles is the most populous city in the state and the second most populous city in the country (after New York City).
+                    Los Angeles County is the country's most populous, while San Bernardino County is the largest county by area in the country.
+                    San Francisco, which is both a city and a county, is the second most densely populated major city in the
+                    country (after New York City) and the fifth most densely populated county in the country, behind four of
+                    New York City's five boroughs.</p>
+            </span>
+            <span id="about_beaches"><br><br>
+                <h1>5 Orange County Beaches to Visit this Summer</h1>
+                <blockquote cite="https://californiathroughmylens.com/best-orange-county-beaches">
+                    <p class="text">Orange County has some genuinely amazing beaches that people come from all over the country to visit. While this is not a complete list, it features some of my favorite beaches in the county. </p>
+                </blockquote>
+                <dl id="beaches_list1"><br>
+                     <dt><h1>San clemente</h1> </dt>
+                <dd>
+                    <fig>
+                    <img src="san-clemente-peter-tellone.jpg" alt="san clemente" title="san clemente" >
+                    <figcaption>
+                        This is san clemente, one of most famous beaches of all time.
+                    </figcaption>
+                </fig>
+                </dd>
+                <dd>
+                    <p class="text">San Clemente will always have a special place in my heart because it was where
+                    I surfed for the first time. This beach is great though for surfers, bodyboarders,
+                    and just those wanting to relax on the sand. The beach has a nice pier with a couple
+                    of restaurants on it, and it has a bunch of shops and restaurants across Avenida Del
+                    Mar as well. Also, this beach can be accessed via the Metrolink / Amtrack, so if you
+                    live near a stop, you can hop on and get dropped off right at the beach without having
+                    to find a place to park.</p>
+                </dd>
+                <dt><br><br>
+                    <h1>Strands Beach</h1>
+                </dt>
+                 <dd>
+                     <fig>
+                        <img src="Strands Beach.jpg" alt="Strands Beach" title="Strands Beach" >
+                        <figcaption>
+                            This is Strands Beach, one of most famous beaches of all time.
+                        </figcaption>
+                     </fig>
+                 </dd>
+                <dd>
+                    <p class="text">Dana Point has a few great beaches like Strands and Salt Creek, but I usually prefer Strands.
+                    It is an excellent spot with a lot of parking and a good amount of coastline. Plus, it is the
+                    only beach I know of that has a funicular, which is a small elevator that runs basically
+                    sideways and takes you from the parking lot to the beach. If you go at low tide, you may
+                    even see some creatures in the tide pools.</p>
+                </dd>
+                <dt><br><br>
+                    <h1>Thousand Steps Beach</h1>
+                </dt>
+                <dd>
+                    <fig>
+                        <img src="Thousand Steps Beach.jpg" alt="Thousand Steps Beach" title="Thousand Steps Beach" >
+                        <figcaption>
+                            This is Thousand Steps Beach, one of most famous beaches of all time.
+                        </figcaption>
+                    </fig>
+                </dd>
+                <dd>
+                    <p class="text">1000 Steps Beach is probably my favorite beach on this list, but note that it
+                    is tough to find parking here, and you want to go early for a chance to score a spot.
+                    The beach also has a very steep staircase, which the name 1000 Steps comes from, so save your energy
+                    for the walk up. Once you get down to the beach, it feels like an oasis with a beautiful and
+                    small section of coast walled in on both sides by cliffs. It never feels too crowded here
+                    because of the parking, and I always love spending a half-day relaxing on the sand and walking
+                    down to the sea cave if the tide is not too high.
+
+                    Also, I am skipping over a bunch of great Laguna Beach spots to get to
+                    \the next one.
+                    This is because I will probably make a post only on Laguna Beach since
+                    it has some genuinely fantastic beaches like Victoria and Shaws Cove,
+                    so watch out for that video.</p>
+                </dd><br><br>
+                <dt><h1>Crystal Cove State Beach</h1></dt>
+                    <dd>
+                       <fig>
+                        <img src="Crystal Cove State Beach.jpg" alt="Crystal Cove State Beach" title="Crystal Cove State Beach" >
+                        <figcaption>
+                            This is Crystal Cove State Beach, one of most famous beaches of all time.
+                        </figcaption>
+                    </fig>
+                    </dd>
+                    <dd>
+                        <p class="text">I am a huge fan of Crystal Cove because it is a great state park with excellent hiking trails
+                            and three miles of coastline. There are multiple parking lots with access to the beach,
+                            so it is pretty spread out, giving you lots of sand access without a ton of people. Plus,
+                            they have a Shake Shack up on the hillside and who doesn’t like walking up to grab a good
+                            milkshake while enjoying the beach.</p>
+                    </dd><br><br>
+                    <dt><h1>Corona Del Mar</h1></dt>
+                    <dd>
+                        <fig>
+                        <img src="Corona Del Mar.jpg" alt="Corona Del Mar" title="Corona Del Mar" >
+                        <figcaption>
+                            This is Corona Del Mar, one of most famous beaches of all time.
+                        </figcaption>
+                    </fig>
+                    </dd>
+                    <dd>
+                        <p class="text">After 1000 Steps Beach, Corona Del Mar is easily my favorite. This beach has it all, a large
+                            parking lot, a fun cove area with a bunch of rocks to climb around on, fire pits to hang out
+                            by, and a jetty that gives you some fantastic views of the beach. If you are looking for tide
+                            pools, stop by Little Corona Del Mar when you are there as well.</p>
+                    </dd>
+                </dl>
+
+            </span>
+        </div>
+        <div id="col3">
+
+<!--            leave it blank for ads, decrease it's width-->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+<div class="form-container" id="sign1" style="display:none">
+    <form  target="_blank" action="#" method="post">
+        <div id="sign_in" >
+            <fieldset style="border-radius:10px">
+            <legend>
+                <h1>Sign-in</h1>
+<!--
+ sign in(create an id) when user enter username and password into a
+ site to access the pages,(must to have id) login is when is successful
+when entered username and password matches to what in database-->
+            </legend>
+                <div class="padding">
+
+                <label for="email">Enter you Email-id:</label>
+                <input type="email" name="email" id="email" required maxlength="60"><br><br>
+                <label for="password">Create Password:</label>
+                <input type="password" name="password" id="password" required><br><br>
+                <label for="confirm-password">
+                    Confirm your Password:
+                </label>
+                <input type="password" name="confirm password" id="confirm-password" required>
+               <br><br> <button class="btn" type="submit" name="submit" id="submit" value="Sign-in">Sign-in</button>
+                <button class="btn" type="reset" name="reset" value="refresh" id="reset">Refresh</button>
+                    <button class="btn" type="button" name="close" value="close" style="float:right"
+                    onclick="document.getElementById('sign1').style.display = 'none';">Close</button>
+<!--see how to put two classes in same element-->
+                </div>
+            </fieldset>
+        </div></form>
+</div>
+    <div class="form-container" id="login_" style="display:none">
+            <div class="login" >
+                   <form target="_blank" action="#" method="post">
+                <fieldset id="login" style="border-radius:10px">
+                <legend><h1>Log-in</h1></legend>
+            <div class="padding">
+                 <label for="login-email">Enter you Email-id:</label>
+                <input type="email" name="email" id="login-email" required maxlength="60"><br><br>
+                <label for="login-password"> Password:</label>
+                <input type="password" name="password" id="login-password" required><br><br>
+                 <br> <button class="btn" type="submit" name="submit" id="login-submit" value="log-in">Log-in</button>
+                 <button class="btn" type="reset" name="reset" value="refresh" id="login-reset">Refresh</button>
+                <button class="btn" type="button" name="close" value="close" style="float:right"
+                    onclick="document.getElementById('login_').style.display = 'none';">Close</button>
+            </div>
+            </fieldset>
+                   </form></div>
+    </div>
+    <div class="form-container" id="issue_" style="display:none">
+            <div class="tell-issue" >
+                   <form target="_blank" action="#" method="post">
+                <fieldset id="raise-issue" style="border-radius:10px">
+                    <legend>Raise Isuue </legend>
+                    <div class="padding">
+                    <label for="issue">Tell us about the Issue you have:</label><br>
+                    <textarea name="issue" id="issue" rows="10"  placeholder="write your comment here/ write your issue here..." cols="50"></textarea><br><br>
+                    <input class="btn" name="submit" value="Submit" type="submit" >
+                        <input class="btn" name="reset" value="Reset" type="reset" >
+                        <button class="btn" type="button" name="close" value="close" style="float:right"
+                    onclick="document.getElementById('issue_').style.display = 'none';">Close</button>
+                </div></fieldset>
+                   </form></div>
+    </div>
+    <div class="form-container" id="for_us" style="display:none">
+            <div class="forus" >
+                   <form target="_blank" action="#" method="post">
+                <fieldset id="writeforus" style="border-radius:10px">
+                    <legend>Write for us!</legend>
+            <div class="padding">
+                <label for="writup-email">Enter you Email-id:</label>
+                <input type="email" name="email" id="writup-email" required maxlength="60"><br><br>
+                <label for="password_">Password:</label>
+                <input type="password" name="password" id="password_" required><br><br>
+                                        <label for="reason">Tell us Why you want to write for us:</label><br>
+                    <textarea name="issue" id="reason" rows="10"  placeholder="Why you want to write for us ?" cols="50" required></textarea>
+
+                 <br> <button class="btn" type="submit" name="submit" id="writup-submit" value="log-in">Submit</button>
+                 <button class="btn"  type="reset" name="reset" value="refresh" id="writup-reset">Refresh</button>
+                <button class="btn" type="button" name="close" value="close" style="float:right"
+                    onclick="document.getElementById('for_us').style.display = 'none';">Close</button>
+            </div>
+                </fieldset>
+                   </form></div>
+    </div>
+
+
+
+
+
+
+    <div class="form-container" id="contribute"  style="display:none">
+        <form action="#" method="post" target="_blank">
+            <fieldset id="contributeform" style="border-radius:10px;">
+                     <div class="padding">
+                <legend><h1> Contribute</h1></legend>
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text"><br><br>
+                <label for="type">What kind of Contribution</label>
+                <input type="text"id="type" name="type" list="reason1">
+                <datalist id="reason1">
+                    <option value="Want to write"></option>
+                    <option value="Want to Donate"></option>
+                    <option value="Want to be a Digama"></option>
+                </datalist><br><br>
+                <label for="emailid">
+                    Email:
+                </label>
+                <input type="email" name="emailid" id="emailid">
+
+                <br><br>
+                <input type="button" class="btn" name="submit" value="Submit">
+                <input class="btn" type="reset" name="reset" value="Refresh">
+<button class="btn" type="button" name="close" value="close" style="float:right"
+                    onclick="document.getElementById('contribute').style.display = 'none';">Close</button>
+                     </div>
+            </fieldset>
+        </form>
+    </div>
+        <div>
+ <button type="button" name="btn" class="btn" id="btn" style="float:right;"><a href="#brandname" style="color:white;">To Up</a></button>
+<!--first write container in right format-->
+<footer id="footer" style="background:gray;padding:20px;"><hr>
+    <p>The written(only) content of this webpage belongs to<a href="https://californiathroughmylens.com/best-orange-county-beaches"> https://californiathroughmylens.com/best-orange-county-beaches</a></p>
+    <p>I am just using it for educational purpose</p>
+
+</footer>
+
+        </div></main></body>
+</html>
