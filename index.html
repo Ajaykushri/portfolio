@@ -1,47 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>portfolio: landing page</title>
-    <meta name="viewport" content="device=width-device, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
     <link rel="stylesheet" href="style.css">
-    <script src="home.js"></script>
-<!--/*media query not working on those element that has inline css;*/-->
-    <link rel="icon" href="icon.jfif">
+
+    <meta name="keyword" content="portfolio, about, contact me, home, front-end web devloper">
+    <meta name="description"
+        content="This is the landing page for my portfolio. All the link to my portfolio project is redirected from here only.">
+    <meta name="author" content="Ajay kumar shrivastav">
+    <link rel="icon" href="logo.jpg">
+
 </head>
+
 <body>
-<div id="welcomeNote" style="width:100vw;background-image: linear-gradient(6deg,red,orange,blue); height:100vh;position:absolute;z-index:1;">
-    <p id="welcomeText" style="font-family:verdana;font-size: 60px;padding-right:60px;text-align:center;position:fixed;top:170px;left:20vw">Welcome To My Portfolio</p>
-    <button type="button" id="continue" style="position:fixed; top:460px;left:35vw; background-image:linear-gradient(50deg,purple,blue,red);color:white;width:30vw;height:7vh;border-radius:40px 20px"
-    onclick="document.getElementById('welcomeNote').style.display = 'none';">Click to Continue</button>
-</div>
-<!--always mark landing page as index.html;-->
+    
+    <header>
 
-<!--make this page more valuable with time and redesign-->
 
-<header>
-<!--   background size to fill container but height to set container height;-->
-    <nav>
-    <ul>
-        <li title="click here to go to home"><a href="index.html" target="_blank">Home</a>  </li>
-        <li class="navtab" title="click to check portfolio"><a target="_blank" href="portfolio.html"> Portfolio</a></li>
-        <li class="navtab" title="click to know me"><a  target="_blank " href="about.html">About</a> </li>
-        <li class="navtab" title="click to contact me"><a target="_blank" href="contact.html">Contact</a> </li>
-    </ul>
-</nav>
-<div id="prf">
-     <img id="logo2" src="logo.jpg" alt="A boy with a smile on face;" height="250vh" width="300vw">
-<!--    change the photo-->
-    <span id="data">
-     <h1 id="username"><strong>Ajaykushri</strong></h1>
-    <p>I design and develop static websites and SEO, using HTML, CSS and Javascript.</p>
-        <div>
-    <button id="btn-portfolio" title="click to check portfolio"><a href="portfolio.html" target="_blank">Check Portfolio</a> </button>
-</div>
-    </span>
-</div>
 
-</header>
-</div>
+        <nav>
+
+
+            <ul>
+                <li><a href="index.html" target="blank">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="portfolio.html" target="blank">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+
+            </ul>
+
+            <ul>
+                <span id="btn">
+                    <li><button type="button" class="btn"><a href="AjayResume.pdf" target="blank">Download
+                                CV</a></button></li>
+                    <li><button type="button" class="btn"><a href="#contact"> Contact me</a></button> </li>
+                    <li> <button type="button" class="btn"><a href="portfolio.html" target="blank"> Portfolio </a></li>
+
+
+                    <li><button type="button" class="btn"><a href="#hire">HIRE ME!</a></button></li>
+
+                </span>
+            </ul>
+        </nav>
+
+        <!-- aware used of position is good.
+        1) create a template, nuetar all comments, add all call to action to any professional website or bussines website
+        2)content will be decided later on
+        2.a) add more generious look with css. in both file.
+        add content and merge it main repository.
+        2.b)  add a cover page when clicked continue it open main page like in last version
+        3)remove tags and replace by actual content, make it responsive
+        4) make navbar fixed and provide bookmark and go down and go up navigation
+        5) keep improving this website and update content, add more projects and improve them to keep adding, keep improving, keep making improvements.
+     -->
+
+
+    </header>
+    <main id="main">
+        <div id="carousel">
+
+            <!--  to have blank space in forground. -->
+            <div id="carfor">
+
+                <span id="name" style="display:flex;">
+                    <img style="border-radius: 50%;box-shadow:4px 4px 5px white; height: 60%; margin-right: 1vw;width: 30%;"
+                        src="logo.jpg" alt="A happy smiling face" height="100%" width="30vw">
+                    <span>
+                        <h1 style="font-family: cursive;">Ajaykushri</h1><br>
+                        <br>
+                        <p id="slogan">Create a new Experience for you....</p>
+                    </span>
+
+                </span><br>
+                <p id="mission"> Experiment - Innovate - Create.</p>
+            </div><br><br>
+            <br><br><br>
+            <!-- 
+        use inspect to get what wrong with elements
+     -->
+
+
+            <!-- put some good looking pics a professional photoshoot requirred. -->
+
+
+        </div>
+        <!-- make a animation where background pic changes from 1 to 100 % in infinite loop. onload. -->
+
+
+        <br><br>
+
+        <div id="about">
+            <h2>Know About me ! </h2><br>
+            <p>
+                My name is Ajay Kumar Shrivastav. <a href="AjayResume.pdf" target="blank">SEE MY CV</a>. I leave in
+                Delhi, India.
+                I am a front end devloper. I create static website using HTML, CSS, javaScript. I also devlope dynamic
+                website user interface and website.
+
+
+            </p><br><br>
+
+            <h2>I am well aware of : </h2><br>
+            <ol>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>javaScript</li>
+                <li>Bootstrape</li>
+                <li>Git and Github</li>
+                <li>S.E.O</li>
+                <li>Responsive Web-design.</li>
+            </ol>
+            <p> To ensure this you can see my <a href="portfolio.html" target="blank"> Portfolio</a>.</p>
+            <br><br>
+            <h2>My speciality:</h2><br>
+
+            <ol>
+                <li>Making static blog Websites. </li>
+                <li>Customising CSS</li>
+                <li>Debugging HTML</li>
+                <li>Making SEO friedly website. </li>
+                <li>Making fast and responsive website.</li>
+                <li>Designing front end of Bussiness, profile, landing page, blogs, Tribute page, Product promoting and
+                    showcassing webpages.</li>
+                <li>I can make website from scratch code as well as using Bootstrap, and can be a usefull member of
+                    teams of devloper, so if want can consider me for group projects. </li>
+            </ol>
+            <p> To ensure this you can see my <a href="portfolio.html" target="blank"> Portfolio</a>.</p>
+
+        </div>
+
+        <div id="contact">
+            <h1>Contact me !</h1><br>
+            <p>Hii, reader. If you reach this far, means you like my work and will like to consider me for a Project,
+                job or Know more about me.</p>
+            <p>So, don't wait, Just reach me with a click....</p>
+            <p>Reach me with E-mail: <a
+                    href="mailto:ajaykumarshrivastav1811@gmail.com,ajaykumarshrivastav1811@outlook.com">Click to Mail
+                    Me!</a></p>
+            <!-- 
+        add all link and content corrected before uploading. and add more reachout outlets.
+     -->
+            <p>Get me on linkedin: <a href="https://www.linkedin.com/in/ajay-kumar-shrivastav-700245201"
+                    target="blank">Get Me on linkedin</a></p>
+        </div><br>
+
+        <div id="hire">
+            <h1>HIRE ME!</h1><br>
+            <p>To Hire me contact me with my email with following information:</p>
+
+            <p> Name/firm name: ________________ </p>
+            <p> Location: ___________________</p>
+            <p>Contact details </p>
+            <p>Task description: ________________ </p>
+            <p>Time-limit: ________________ </p>
+            <p>Conditions/Terms of project: ________________ </p>
+            <p>Price qouted: ________________</p>
+
+        </div>
+
+
+
+
+        <button type="button" class="btn" style="position:fixed;bottom:10px;right:10px;"><a href="#main">Go up <span
+                    style="writing-mode:vertical-lr">
+                    << </span></a></button>
+
+    </main>
+
+
+
 </body>
+
 </html>
